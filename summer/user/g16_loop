@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Current Job Status: " > Status
+export g16root=/home/user/softwares/g16
+export GAUSS_SCRDIR=/home/user/scratch
+export GAUSS_EXEDIR=$g16root/g16
+. $g16root/g16/bsd/g16.profile
+
+echo "Starting file $file at `date`" >> Status
+for FILE in ch4.com 
+do
+    BASENAME="`basename $FILE .com`"
+    OUTFILE="$BASENAME.log"
+    if ! [ -e $OUTFILE ]
+    then
+        echo "Started job $BASENAME at `date +%T`"
+        g16 < $FILE > $OUTFILE
+    fi
+done
+echo "All Done." >> Status
