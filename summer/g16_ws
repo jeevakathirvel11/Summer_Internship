@@ -5,6 +5,6 @@
     export GAUSS_EXEDIR=$g16root/g16
     . $g16root/g16/bsd/g16.profile
 
-    g16 < methToluene.com > methToluene.log
+    g16 < methToluene.com > methToluene.log  # Change the filename g16 < input-filename.com > output-filename.log
     echo "$file Done with status $status" >> Status
 echo "All Done." >> Status
