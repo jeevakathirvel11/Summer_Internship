@@ -1,0 +1,10 @@
+#!/bin/bash
+    echo "Starting file $file at `date`" >> Status
+    export g16root=/home/user/softwares/g16
+    export GAUSS_SCRDIR=/home/user/scratch
+    export GAUSS_EXEDIR=$g16root/g16
+    . $g16root/g16/bsd/g16.profile
+
+    g16 < methToluene.com > methToluene.log
+    echo "$file Done with status $status" >> Status
+echo "All Done." >> Status
