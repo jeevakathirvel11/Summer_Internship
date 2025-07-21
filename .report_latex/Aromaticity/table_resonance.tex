@@ -1,0 +1,35 @@
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[H]
+\centering
+\begin{small}
+\begin{tabular}{|>{\centering\arraybackslash}m{6cm}
+                |>{\centering\arraybackslash}m{2.5cm}
+                |>{\centering\arraybackslash}m{2cm}
+                |>{\centering\arraybackslash}m{2cm}
+                |>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\textbf{Structure} & \textbf{Number of $\pi$ electrons} & \textbf{Geometry} & \textbf{Resonance Energy (kcal/mol)} & \textbf{Aromaticity} \\
+\hline
+\tiny\chemname{\chemfig{**[0,360,dash pattern=on 2pt off 2pt]6(-=-=-=)}}{\small Benzene} \rule{0pt}{35pt} & 6 & Planar & 37.66 & Aromatic \\
+\hline
+\tiny\chemname{\chemfig{**[0,360,dash pattern=on 2pt off 2pt]6(-=**[0,360,dash pattern=on 2pt off 2pt]6(-=-=--)-=-=)}}{\small Naphthalene} \rule{0pt}{35pt} & 10 & Planar & 25.31 & Aromatic \\
+\hline
+\tiny\chemname{\chemfig{*4(-=-=-)}}{\small Cyclobutadiene} \rule{0pt}{35pt} & 4 & Planar & -41.18 & Anti-aromatic \\
+\hline
+\tiny\chemname{\chemfig{*8(-=-=-=-=-)}}{\small Cyclooctatetraene} \rule{0pt}{45pt} & 8 & Non-planar & 0.55 & Non-aromatic \\
+\hline
+\tiny\chemname{\chemfig{**[0,360,dash pattern=on 2pt off 2pt]7(=-=-\chemabove{C}{\oplus}-=--)}}{\small Cycloheptatrienyl cation} \rule{0pt}{40pt} & 6 & Planar & 32.47 & Aromatic \\
+\hline
+\tiny\chemname{\chemfig{*7(=-=-\chemabove{C}{\ominus}-=--)}}{\small Cycloheptatrienyl anion} \rule{0pt}{45pt} & 6 & Planar & -19.28 & Anti-aromatic \\
+\hline
+\tiny\chemname{\chemfig{O**[0,360,dash pattern=on 2pt off 2pt]5(-=-=--)}}{\small Furan} \rule{0pt}{45pt} & 6 & Planar & 11.23 & Aromatic \\
+\hline
+\tiny\chemname{\chemfig{S**[0,360,dash pattern=on 2pt off 2pt]5(-=-=--)}}{\small Thiophene} \rule{0pt}{35pt} & 6 & Planar & 15.56 & Aromatic \\
+\hline
+\tiny\chemname{\chemfig{N**[0,360,dash pattern=on 2pt off 2pt]6(=-=-=-)}}{\small Pyridine} \rule{0pt}{35pt} & 6 & Planar & 36.33 & Aromatic \\
+\hline
+\end{tabular}
+\end{small}
+\caption{Aromaticity in conjugated homocyclic and heterocyclic compounds }
+\label{Resonance_table}
+\end{table}

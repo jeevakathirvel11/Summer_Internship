@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+
+% Page layout
+\usepackage[a4paper, margin=1in]{geometry}
+
+% Graphics and floats
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{float}
+
+% Title and spacing
+\usepackage{titling}
+\usepackage{setspace}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+
+% Text formatting
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{lipsum}
+\usepackage{caption}
+
+% Lists and symbols
+\usepackage{enumitem, pifont}
+
+% Code listings
+\usepackage{listings}
+\usepackage{xcolor}
+\lstdefinestyle{mypython}{
+    language=Python,
+    backgroundcolor=\color{gray!10},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{teal},
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    frame=single,
+    breaklines=true,
+    tabsize=4,
+    captionpos=b
+}
+
+% Chemistry
+\usepackage[version=4]{mhchem}    % for chemical formulas
+\usepackage{chemfig}
+\usepackage{chemmacros}
+\chemsetup{modules={reactions}}   % Enable reaction schemes
+
+% Math
+\usepackage{amsmath, amssymb}
+
+% Hyperlinks and references
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=red, citecolor=green]{hyperref}
+\usepackage{cleveref}  % optional but great for auto-formatting references
+
+% Reference
+\usepackage[utf8]{inputenc}
+
+%\setcounter{tocdepth}{4}
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+
+\input{title_page}
+\pagenumbering{roman}
+\newpage
+\input{declaration}
+\newpage
+\input{acknowledgement}
+\newpage
+\tableofcontents
+\newpage
+\input{abstract}
+
+\newpage
+\pagenumbering{arabic} 
+
+
+%Experiment 1
+\vspace*{\fill}
+\begin{center}
+    \section{Project: \MakeUppercase{\romannumeral 1} -  Quantitative Thermodynamic Descriptions of Aromaticity}\cite{quantitative_thermodynamic_aromaticity_2005}
+    \label{project1}
+    %\addcontentsline{toc}{section}{Quantitative Thermodynamic Descriptions of Aromaticity}
+\end{center}
+\vspace*{\fill}
+
+\newpage
+\include{Aromaticity/project1}
+
+%Experiment 2
+\newpage
+\vspace*{\fill}
+\begin{center}
+    \section{Project : \MakeUppercase{\romannumeral 2} - A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}\cite{anderson_lewis_acid_base_2000}
+    %\addcontentsline{toc}{section}{A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}
+    \label{project2section}
+\end{center}
+\vspace*{\fill}
+
+\newpage
+\include{Acid_Base/project2}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+    \section{Project: \MakeUppercase{\romannumeral 3} - Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}\cite{lafuente_gentle_ml_2021}
+    %\addcontentsline{toc}{section}{Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}
+\end{center}
+\vspace*{\fill}
+
+\newpage
+\include{Machine_learning/project3}
+
+
+\newpage
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+\begin{enumerate}
+    \item \href{https://pubs.acs.org/doi/suppl/10.1021/ed082p953/suppl_file/jce2005p0953w.pdf}{Supplementary material of project 1 containing theatrical data used for calculating percentage error.}
+    \item \href{https://archive.ics.uci.edu/dataset/186/wine+quality}{Red and White wine-quality dataset. }
+    \item \href{https://docs.google.com/spreadsheets/d/1YVUVZeZ_wiyl1l1sGVrfcRbrWC0P5ydPrFI7W2mUbzQ/edit?usp=sharing}{$1^{st}$ experiment-Aromaticity dataset Google-sheets}
+    \item \href{https://docs.google.com/spreadsheets/d/1DhclPD_BuQI6k3KOSAlNELtijxsx-F_Mzil6ODMJ_lI/edit?usp=sharing}{$2^{nd}$ experiment-Acid Base Dataset Google-Sheets}
+    \item \href{https://github.com/jeevakathirvel11/Summer_Internship}{Computational chemistry github}. Molecule construction, input $\&$ output files of $1^{st}$ and $2^{nd}$.
+    \item \href{https://github.com/jeevakathirvel11/Intro-to-Machine-Learning-in-Chemistry.git}{Machine Learning for chemist}. $3^{rd}$ experiment's worked-out Assignments and Jupyter Notebooks.
+    \item \href{https://drive.google.com/drive/folders/1kaaZYR6s1578xgS4SVJjO0Ni_yRnoT6p?usp=sharing}{Google-colab Interactive Python Notebooks}
+    \item \href{https://in.mirrors.cicku.me/ctan/macros/latex/contrib/mhchem/mhchem.pdf}{\textit{\textbf{mhchem}} Chemistry Equation \LaTeX package}. Chemical equations in the report used this package.
+    \item \href{https://mirror.niser.ac.in/ctan/macros/generic/chemfig/chemfig-en.pdf}{\textit{\textbf{chemfig}} Chemistry structures drawing \LaTeX package. Cyclic Organic Chemical figures in this report are build using this package.}
+\end{enumerate}
+
+
+\bibliographystyle{plain}
+\bibliography{Reference}
+
+\noindent\dotfill
+
+
+\end{document}
+
+
+

@@ -1,0 +1,100 @@
+\newpage
+\subsection{Introduction}
+%\addcontentsline{toc}{subsection}{Introduction}
+This study focuses on understanding the concept of aromaticity of organic compounds and verifying the aromaticity rules various homocyclic and heterocyclic hydrocarbons and hydrocarbon ions by finding their resonance energy, using computational calculations in \textit{Gaussian-16} software integrated with the \textit{GaussView-6} graphical interface.
+
+The computational procedure involves constructing the organic molecule and Geometry Optimization+Frequency \textit{ (Opt+freq)} using \textit{ab-initio }semi-empirical AM1 calculation and followed by single point \textit{(sp)} energy calculations on the optimized structures using the Hartree-Fock method with the HF 3-21G(*) basis set.
+
+
+
+%Theory
+\subsection{Theory}
+%\addcontentsline{toc}{subsection}{Theory}
+\subsubsection{Aromaticity}
+Aromatic Compounds are a crucial part of organic chemistry. The concept of Aromaticity is defined by Huckel's rule. For a molecule to be aromatic it should follow three rules.
+\begin{itemize}[label=\ding{228}] 
+    \item \textbf{Cyclic:} The molecule must be forming a closed loop.
+    \item \textbf{Planar:} The molecule must have $sp^2$ hybridized orbitals, so that p-orbitals can overlap continuously.
+    \item \textbf{Conjugation:} The ring must have alternate double bonds for conjugation of $\pi$ electrons;such that it is fully conjugated, allowing delocalization of $\pi$-electrons.
+    \item \textbf{\boldmath$(4n + 2)\ \pi$-electrons:} The molecule must contain $(4n + 2) \pi-$ electrons in the conjugated system, where $n = (0, 1, 2,...).$
+\end{itemize}
+
+\input{Aromaticity/aromaticity_table}
+
+\subsubsection{Resonance Energy}
+The resonance energy explains the stability of aromatic compounds. We have used \textit{Isodesmic Isomerization reaction} for calculating the resonance energy of molecules. An Isodesmic Isomerization reaction is a hypothetical chemical reaction where the number and type of chemical bonds are the same on both sides of the equation. The isodesmic structures $(A  \&  B)$ shown in \Cref{fig:benzene_scheme},  of the desired molecules were constructed and their electronic energy  was computed, and the results were used to classify the compounds as aromatic, non-aromatic, or anti-aromatic.\\
+%schemestart \chemfig{O*5(-=(-CH_3)-=--)} \arrow{->} \chemfig{O*5(--(=CH_2)-=--)} \schemestop
+
+\begin{figure}[!htp]
+\centering
+\schemestart
+  \chemname{\chemfig{*6(=-=-(-)=-)}}{Resonance Hybrid (\textbf{A})}
+  \arrow{->}
+  \chemname{\chemfig{*6(=-=-(=)--)}}{Isomer (\textbf{B})}
+\schemestop
+\caption{Example of Isodesmic Isomerization reaction.}
+\label{fig:benzene_scheme}
+\end{figure}
+
+
+
+\subsubsection{Computational Calculation}
+\textbf{Optimization + Frequency calculation: }This finds the molecular geometry with the lowest possible energy, which is the global minimum on the potential energy surface (PES) with only positive frequency values.
+
+%This is used for finding the most stable geometry of the input molecule by adjusting the Potential Energy Surface (PES) and finding the global minima or the lowest energy structure to be the optimized geometry of the molecule.
+
+\textbf{Single Point Energy Calculation:} This solves the Schrodinger equation using the approximation technique used by the given basis and finding the Total Electronic Energy of the input molecule at given geometry.
+
+\textbf{Basis set }is a collection of mathematical functions which provide the tool to build the approximation to solve the Schrodinger equation  by representing the molecular orbitals as a linear combination of basis functions.
+
+In computational chemistry, selecting an appropriate basis set is essential for balancing accuracy, time and computational cost. Geometry optimization and frequency calculations were performed using the semi-empirical AM1 method due to its efficiency for small and simple molecules. A more accurate single point energy calculation was then carried out using the Hartree-Fock method with the significantly higher-level 3-21G(*) basis set. All the calculations are done within seconds and the results are comparable with the higher basis-set calculation data.
+
+
+%Observation and Results
+\newpage
+\subsection{Observation and Results}
+%\addcontentsline{toc}{subsection}{Observation and Results}
+The Resonance energy was calculated for the following molecules:\\
+\textbf{6 homocyclic molecules:} Benzene, Naphthalene, cyclobutadiene, Cyclooctatetraene, Cycloheptatrienyl cation and Cycloheptatrienyl anion.\\
+\textbf{3 heterocyclic molecules:} Furan, Pyridine, Thiophene.
+
+The thermodynamic electronic energies of the isodesmic isomers of the given molecules were calculated. The resonance energy of each molecule was determined as the difference between the electronic energy of the isomer and that of the resonance hybrid, as shown below:
+
+\begin{equation*}
+E_{\text{Resonance}} = E_{B\;(Isomer)} - E_{A\;(Resonance Hybrid) }
+\end{equation*}
+
+The results are summarized in the tables \cref{Heterocyclic_table},\cref{Homocyclic_table}, \cref{Resonance_table}.\\
+We can compare the Stability and Aromaticity of the molecules using resonance energy. As a whole, we can write the descending order of stability of organic compounds as:\\
+\\
+$
+\text{Benzene} \gtrsim \text{Pyridine} > \text{Cycloheptatrienyl cation} > \text{Napthalene} > \text{Thiophene} > \text{Furan} > \text{Cyclooctatetraene} > \text{Cycloheptatrienyl anion} > \text{Cyclobutadiene}
+$
+
+\input{Aromaticity/hetrocyclic_table}
+\newpage
+\input{Aromaticity/homocyclic_table}
+\newpage
+\input{Aromaticity/table_resonance}
+
+
+
+%Discussion
+\newpage
+\subsection{Conclusion and Discussion}
+%\addcontentsline{toc}{subsection}{Discussion}
+
+
+This study demonstrates the utility of computational chemistry in analyzing molecular structures and predicting chemical behavior. By applying electronic structure methods, researchers can gain insights into properties and bonding patterns that are often difficult to observe experimentally. The combination of molecular modeling and quantum mechanical calculations provides a framework for understanding chemical systems at the electronic level.
+
+The use of isodesmic reactions in this experiment allowed for a practical and efficient approach to quantifying aromaticity. Since the method involves comparing structurally similar species with identical bonding patterns, it minimizes systematic errors and offers reliable energy differences. The calculations, although based on relatively small basis sets, produced meaningful results in a short computation time—showing strong agreement with theoretical expectations. This approach requires only the optimized geometry and electronic energy of two structures per molecule, making it suitable for a wide range of compounds. While this experiment focused on aromaticity, the same computational strategies are broadly applicable to various molecular systems as we are going to see in \cref{project2} .
+
+In summary, this experiment highlights how computational tools like Gaussian and GaussView can model molecular structures, interpret bonding characteristics, and support chemical predictions. It reinforces the value of integrating theoretical methods with experimental insight to advance understanding in modern chemical research.\\
+
+\noindent\dotfill
+
+
+
+%Conclusion
+%\subsection{Conclusion}
+%\addcontentsline{toc}{subsection}{Conclusion}
