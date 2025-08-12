@@ -1,0 +1,73 @@
+\contentsline {section}{Declaration by the Student}{i}{section*.1}%
+\contentsline {section}{Acknowledgments}{ii}{section*.2}%
+\contentsline {section}{Abstract}{v}{section*.4}%
+\contentsline {section}{Quantitative Thermodynamic Descriptions of Aromaticity}{1}{section*.5}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Theory}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Aromaticity}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Resonance Energy}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Computational Calculation}{3}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.3}Observation and Results}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Conclusion and Discussion}{7}{subsection.1.4}%
+\contentsline {section}{A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}{8}{section*.11}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Theory}{9}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Lewis acid and base}{9}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Binding Energy}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Factors Affecting Binding Energy}{10}{subsubsection.2.2.3}%
+\contentsline {paragraph}{i). Energies of HOMO and LUMO}{10}{section*.12}%
+\contentsline {paragraph}{ii). Hardness of acid and base}{10}{section*.13}%
+\contentsline {paragraph}{iii). Reorganizational Energy of idealised acid: }{10}{section*.14}%
+\contentsline {paragraph}{iv). Reorganizational Energy of acid and base in adduct}{10}{section*.15}%
+\contentsline {paragraph}{v). Vertical Electron Attachment Energy (VEAE) of acid}{10}{section*.16}%
+\contentsline {paragraph}{vi). Proton affinity of base}{11}{section*.17}%
+\contentsline {paragraph}{vii). Charge transfer on adduct formation}{11}{section*.18}%
+\contentsline {paragraph}{viii). Change in the M–X bond distance in the acid}{11}{section*.19}%
+\contentsline {paragraph}{ix). X–M–X bond angle in the acid of the adduct}{11}{section*.20}%
+\contentsline {paragraph}{x). Electrostatic and steric interactions}{11}{section*.21}%
+\contentsline {subsection}{\numberline {2.3}Observation}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Results}{17}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Strength of acid, base and adducts}{17}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Correlation Heatmap}{17}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Discussion and Conclusion}{18}{subsection.2.5}%
+\contentsline {section}{Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}{19}{section*.28}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{20}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Basic Definitions}{20}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Importing wine datasets}{21}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Data Visualization using statistical plots}{22}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Histogram}{22}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Box plot}{24}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Violin plot}{24}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Heatmap}{25}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Pair plot}{27}{subsubsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.4}Statistics in pandas}{28}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Descriptive Statistics functions}{28}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Confidence interval}{28}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Hypothesis tests}{28}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Student's t-test}{29}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}One-sample test}{29}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Two-sample test}{30}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Equality of Variances (Homoscedasticity)}{31}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}ANOVA}{32}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Variable Reduction}{33}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}PCA (Principal Components Analysis)}{33}{subsubsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}t-SNE (t-distributed Stochastic Neighbor Embedding)}{35}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.3}UMAP (Uniform Manifold Approximation and Projection)}{36}{subsubsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.10}Classification}{38}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}Logistic regression}{38}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}Data Splitting and Standardization}{39}{subsubsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.3}Multiple Logistic Regression}{40}{subsubsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.11}Performance Metrics for Classification}{41}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Confusion Matrix}{41}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}Precision score}{42}{subsubsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.3}Recall score}{42}{subsubsection.3.11.3}%
+\contentsline {subsubsection}{\numberline {3.11.4}F1 score}{42}{subsubsection.3.11.4}%
+\contentsline {subsection}{\numberline {3.12}Decision tree}{43}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Regression}{44}{subsection.3.13}%
+\contentsline {subsubsection}{\numberline {3.13.1}Correlation}{44}{subsubsection.3.13.1}%
+\contentsline {subsubsection}{\numberline {3.13.2}Linear Regression}{44}{subsubsection.3.13.2}%
+\contentsline {subsubsection}{\numberline {3.13.3}Multiple Linear Regression}{46}{subsubsection.3.13.3}%
+\contentsline {subsubsection}{\numberline {3.13.4}Root Mean Squared Error (RMSE)}{46}{subsubsection.3.13.4}%
+\contentsline {subsection}{\numberline {3.14}LASSO(Least Absolute Shrinkage and Selection Operator)}{46}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Discussion and Conclusion}{49}{subsection.3.15}%
+\contentsline {section}{Appendix}{50}{section*.48}%

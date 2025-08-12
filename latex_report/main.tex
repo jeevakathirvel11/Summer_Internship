@@ -49,7 +49,6 @@
     tabsize=4,
     captionpos=b
 }
-
 % Chemistry
 \usepackage[version=4]{mhchem}    % for chemical formulas
 \usepackage{chemfig}
@@ -69,7 +68,12 @@
 %\setcounter{tocdepth}{4}
 
 \renewcommand{\arraystretch}{1.3}
-
+\newcommand{\rom}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\setcounter{secnumdepth}{3}
+\makeatletter
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\makeatother
 \begin{document}
 
 \input{title_page}
@@ -90,9 +94,10 @@
 %Experiment 1
 \vspace*{\fill}
 \begin{center}
-    \section{Project: \MakeUppercase{\romannumeral 1} -  Quantitative Thermodynamic Descriptions of Aromaticity}\cite{quantitative_thermodynamic_aromaticity_2005}
+    \refstepcounter{section}
+    \section*{Project: Quantitative Thermodynamic Descriptions of Aromaticity}\cite{quantitative_thermodynamic_aromaticity_2005}
     \label{project1}
-    %\addcontentsline{toc}{section}{Quantitative Thermodynamic Descriptions of Aromaticity}
+    \addcontentsline{toc}{section}{Quantitative Thermodynamic Descriptions of Aromaticity}
 \end{center}
 \vspace*{\fill}
 
@@ -103,8 +108,9 @@
 \newpage
 \vspace*{\fill}
 \begin{center}
-    \section{Project : \MakeUppercase{\romannumeral 2} - A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}\cite{anderson_lewis_acid_base_2000}
-    %\addcontentsline{toc}{section}{A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}
+    \refstepcounter{section}
+    \section*{Project : A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}\cite{anderson_lewis_acid_base_2000}
+    \addcontentsline{toc}{section}{A Computational Analysis of Lewis Acids and Bases: Optimizing Electronic Properties and Reactivity}
     \label{project2section}
 \end{center}
 \vspace*{\fill}
@@ -115,8 +121,9 @@
 \newpage
 \vspace*{\fill}
 \begin{center}
-    \section{Project: \MakeUppercase{\romannumeral 3} - Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}\cite{lafuente_gentle_ml_2021}
-    %\addcontentsline{toc}{section}{Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}
+    \refstepcounter{section}
+    \section*{Project: \rom{3} - Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}\cite{lafuente_gentle_ml_2021}
+    \addcontentsline{toc}{section}{Machine Learning for Chemists: Using Python Notebooks for Visualization, Data Processing, Analysis, and Modeling of wine dataset}
 \end{center}
 \vspace*{\fill}
 

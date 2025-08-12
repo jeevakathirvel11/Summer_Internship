@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{anderson_lewis_acid_base_2000}
+Wayne~P. Anderson.
+\newblock A lewis acid‑base computational chemistry exercise for advanced
+  inorganic chemistry.
+\newblock {\em Journal of Chemical Education}, 77(2):209--214, 2000.
+
+\bibitem{quantitative_thermodynamic_aromaticity_2005}
+J.~Klapper, D.~CP Magill, and T.~JW Greenbowe.
+\newblock Quantitative thermodynamic descriptions of aromaticity: A
+  computer-driven class experiment.
+\newblock {\em Journal of Chemical Education}, 82(6):953--958, 2005.
+
+\bibitem{lafuente_gentle_ml_2021}
+Deborah Lafuente,  Brenda~H. Cohen, Guillermo Fiorini, Agustín~A. García,
+  Mauro Bringas, Ezequiel Morzan, and Diego Onna.
+\newblock A gentle introduction to machine learning for chemists: An
+  undergraduate workshop using python notebooks for visualization, data
+  processing, analysis, and modeling.
+\newblock {\em Journal of Chemical Education}, 98(9):2892--2898, 2021.
+
+\end{thebibliography}
